@@ -1,54 +1,22 @@
 <?php
-
 declare(strict_types=1);
 
-$agenda = [
-    [
-        "nama" => "Photo Hunting",
-        "kategori" => "Fotografi",
-        "tanggal" => "Jadwal menyusul",
-        "deskripsi" => "Kegiatan berburu foto bersama untuk melatih kemampuan fotografi anggota."
-    ],
-    [
-        "nama" => "Mini Exhibition",
-        "kategori" => "Pameran",
-        "tanggal" => "Jadwal menyusul",
-        "deskripsi" => "Pameran karya fotografi dan multimedia dari anggota ALVIC."
-    ],
-    [
-        "nama" => "Mini Expo",
-        "kategori" => "Expo",
-        "tanggal" => "Jadwal menyusul",
-        "deskripsi" => "Pengenalan karya dan aktivitas kreatif kepada mahasiswa."
-    ],
-    [
-        "nama" => "Creative Workshop",
-        "kategori" => "Workshop",
-        "tanggal" => "Jadwal menyusul",
-        "deskripsi" => "Belajar dan berbagi pengetahuan tentang dunia multimedia."
-    ]
-];
-
-function aman(string $teks): string
-{
-    return htmlspecialchars($teks, ENT_QUOTES, 'UTF-8');
-}
+require_once 'functions.php';
 ?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALVIC Multimedia TSU | Agenda</title>
+    <title>Profil | ALVIC Multimedia TSU</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <header>
         <nav>
             <div class="logo">ALVIC</div>
-            <a href="#agenda">Agenda Kegiatan</a>
+            <a href="katalog.php">Agenda Kegiatan</a>
         </nav>
     </header>
 
@@ -56,43 +24,21 @@ function aman(string $teks): string
         <h1>ALVIC Multimedia TSU</h1>
 
         <p>
-            Ruang berkarya, belajar, dan berkembang
-            bersama dalam dunia fotografi dan multimedia.
+            Wadah mahasiswa untuk belajar, berkarya,
+            dan berkembang dalam dunia fotografi dan multimedia.
         </p>
 
-        <a href="#agenda">Lihat Agenda</a>
+        <a href="katalog.php">Lihat Agenda Kegiatan</a>
     </section>
 
-    <section class="agenda" id="agenda">
-        <h2>Agenda Kegiatan</h2>
+    <section class="agenda">
+        <h2>Tentang ALVIC</h2>
 
         <p class="subjudul">
-            Informasi kegiatan dan aktivitas kreatif ALVIC Multimedia TSU.
+            ALVIC Multimedia TSU merupakan wadah untuk mengembangkan
+            kreativitas, kemampuan fotografi, dan keterampilan multimedia
+            melalui kegiatan serta kolaborasi antaranggota.
         </p>
-
-        <div class="daftar-agenda">
-            <?php foreach ($agenda as $kegiatan): ?>
-                <article class="kartu">
-
-                    <span class="kategori">
-                        <?= aman($kegiatan["kategori"]) ?>
-                    </span>
-
-                    <h3>
-                        <?= aman($kegiatan["nama"]) ?>
-                    </h3>
-
-                    <p class="tanggal">
-                        <?= aman($kegiatan["tanggal"]) ?>
-                    </p>
-
-                    <p class="deskripsi">
-                        <?= aman($kegiatan["deskripsi"]) ?>
-                    </p>
-
-                </article>
-            <?php endforeach; ?>
-        </div>
     </section>
 
     <footer>
