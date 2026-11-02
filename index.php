@@ -1,14 +1,10 @@
-<?php
-declare(strict_types=1);
 
-require_once 'functions.php';
-?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil | ALVIC Multimedia TSU</title>
+    <title>ALVIC Multimedia TSU</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,6 +15,7 @@ require_once 'functions.php';
                 <img src="assets/logo.png" alt="Logo ALVIC">
                 <span>ALVIC</span>
             </a>
+
             <a href="katalog.php">Agenda Kegiatan</a>
         </nav>
     </header>
@@ -45,8 +42,7 @@ require_once 'functions.php';
     </section>
 
     <footer>
-        &copy; <?= date("Y") ?> ALVIC Multimedia TSU.
-        Semua hak dilindungi.
+        &copy; 2026 ALVIC Multimedia TSU. Semua hak dilindungi.
     </footer>
 
 </body>
