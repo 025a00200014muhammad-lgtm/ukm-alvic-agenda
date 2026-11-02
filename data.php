@@ -1,11 +1,11 @@
-
 <?php
+declare(strict_types=1);
 
 $agenda = [
     [
         "nama" => "Photo Hunting",
         "kategori" => "Fotografi",
-        "tanggal" => "Coming Soon",
+        "tanggal" => "",
         "deskripsi" => "Kegiatan berburu foto untuk melatih kreativitas dan kemampuan fotografi anggota."
     ],
     [

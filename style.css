@@ -211,3 +211,38 @@ footer {
     }
 }
 
+.ringkasan {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.ringkasan p {
+    padding: 12px 18px;
+    background: var(--abu-gelap);
+    border: 1px solid #493034;
+    border-radius: 5px;
+}
+
+.ringkasan strong {
+    color: var(--merah-alvic);
+}
+
+.status {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.status.segera {
+    background: #49351d;
+    color: #f0c674;
+}
+
+.status.terjadwal {
+    background: #203b2b;
+    color: #9bd6ad;
+}
