@@ -15,7 +15,10 @@ require_once 'functions.php';
 
     <header>
         <nav>
-            <div class="logo">ALVIC</div>
+            <a href="index.php" class="logo">
+                <img src="assets/logo.png" alt="Logo ALVIC">
+                <span>ALVIC</span>
+            </a>
             <a href="katalog.php">Agenda Kegiatan</a>
         </nav>
     </header>
@@ -37,7 +40,7 @@ require_once 'functions.php';
         <p class="subjudul">
             ALVIC Multimedia TSU merupakan wadah untuk mengembangkan
             kreativitas, kemampuan fotografi, dan keterampilan multimedia
-            melalui kegiatan serta kolaborasi antaranggota.
+            melalui kegiatan serta kolaborasi antaranggota di Universitas Tiga Serangkai.
         </p>
     </section>
 

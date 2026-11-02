@@ -1,0 +1,24 @@
+# File konfigurasi lokal
+.env
+.env.*
+
+# File sementara dan backup editor
+*.tmp
+*.bak
+*.swp
+*~
+
+# File sistem operasi
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Folder dependensi PHP jika digunakan
+/vendor/
+
+# Log
+*.log
+
+# File konfigurasi editor lokal
+.vscode/
+.idea/
